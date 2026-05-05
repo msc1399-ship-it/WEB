@@ -278,6 +278,18 @@ p {
   height: 22rem;
 }
 
+.inner-hero {
+  min-height: auto;
+  padding-bottom: 5rem;
+}
+
+.inner-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 4rem;
+  align-items: center;
+}
+
 .hero-grid,
 .problema-grid,
 .contacto-grid {
@@ -1234,6 +1246,53 @@ p {
   color: rgba(255, 255, 255, 0.36);
 }
 
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.package-card {
+  padding: 1.8rem;
+  border: 1px solid var(--border);
+  border-radius: 1.2rem;
+  background: var(--white);
+  box-shadow: 0 12px 35px rgba(12, 29, 43, 0.06);
+}
+
+.package-kicker {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.package-card h3 {
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+  color: var(--dark);
+}
+
+.package-card p {
+  margin-top: 0.8rem;
+  color: var(--gray);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.package-price {
+  margin-top: 1.2rem;
+  color: var(--accent);
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.package-note {
+  margin-top: 0.45rem;
+}
+
 .reveal,
 .scroll-reveal {
   opacity: 0;
@@ -1275,11 +1334,13 @@ p {
 
 @media (max-width: 980px) {
   .hero-grid,
+  .inner-hero-grid,
   .intro-grid,
   .problema-grid,
   .contacto-grid,
   .servicios-grid,
   .testimonios-grid,
+  .packages-grid,
   .blog-grid,
   .footer-grid {
     grid-template-columns: 1fr;
