@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://msc1399-ship-it.github.io/WEB/sitemap.xml
