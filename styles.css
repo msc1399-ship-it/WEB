@@ -409,7 +409,7 @@ p {
 }
 
 .hero-card {
-  padding: 2rem;
+  padding: 2.35rem;
   border: 1px solid rgba(13, 163, 143, 0.24);
   background: rgba(255, 255, 255, 0.05);
 }
@@ -435,7 +435,7 @@ p {
 }
 
 .card-title {
-  margin: 1rem 0 1.4rem;
+  margin: 1rem 0 1.55rem;
   color: var(--white);
   font-size: 1.4rem;
 }
@@ -444,7 +444,7 @@ p {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.8rem 0;
+  padding: 0.92rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -469,6 +469,11 @@ p {
   color: var(--white);
   font-weight: 700;
   text-align: right;
+  flex-shrink: 0;
+}
+
+.card-row-label {
+  max-width: 72%;
 }
 
 .card-row-value.negative {
@@ -480,8 +485,8 @@ p {
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
-  margin-top: 1.5rem;
-  padding: 1rem 1.1rem;
+  margin-top: 1.75rem;
+  padding: 1.15rem 1.2rem;
   border-radius: 0.9rem;
   background: rgba(13, 163, 143, 0.12);
   border: 1px solid rgba(13, 163, 143, 0.24);
