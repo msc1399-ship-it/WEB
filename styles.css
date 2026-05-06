@@ -858,19 +858,37 @@ p {
   line-height: 1.65;
 }
 
+.servicio-lead {
+  min-height: 7.2rem;
+  color: rgba(255, 255, 255, 0.86) !important;
+  font-size: 1rem !important;
+  font-weight: 500;
+  line-height: 1.7 !important;
+}
+
 .servicio-price {
   margin-top: 1.35rem;
   color: var(--accent);
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
   font-weight: 700;
+  opacity: 0.86;
 }
 
 .servicio-price span {
   font-family: "DM Sans", sans-serif;
   color: rgba(255, 255, 255, 0.56);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 400;
+}
+
+.servicio-price-prefix {
+  margin-right: 0.35rem;
+  color: rgba(255, 255, 255, 0.46) !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .servicio-includes {
@@ -892,6 +910,13 @@ p {
   margin-right: 0.55rem;
   color: var(--accent);
   font-weight: 700;
+}
+
+.servicio-price-note {
+  margin-top: 0.6rem !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 0.8rem !important;
+  line-height: 1.6 !important;
 }
 
 .section-cta {
