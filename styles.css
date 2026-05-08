@@ -1319,6 +1319,85 @@ p {
   gap: 1.5rem;
 }
 
+.specific-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.specific-service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: 1.2rem;
+  background: var(--white);
+  box-shadow: 0 12px 35px rgba(12, 29, 43, 0.06);
+}
+
+.specific-service-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.specific-service-kicker {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.specific-service-price {
+  color: var(--dark);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.specific-service-card h3 {
+  color: var(--dark);
+  font-size: 1.22rem;
+  line-height: 1.3;
+}
+
+.specific-service-card p {
+  color: var(--gray);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.specific-service-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  min-height: 2.9rem;
+  padding: 0.8rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid rgba(13, 163, 143, 0.22);
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.specific-service-link:hover {
+  background: rgba(13, 163, 143, 0.08);
+  transform: translateY(-1px);
+}
+
+.specific-services-note {
+  margin-top: 1.35rem;
+  color: var(--gray);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
 .package-card {
   padding: 1.8rem;
   border: 1px solid var(--border);
@@ -1406,6 +1485,7 @@ p {
   .contacto-grid,
   .servicios-grid,
   .testimonios-grid,
+  .specific-services-grid,
   .packages-grid,
   .blog-grid,
   .footer-grid {
