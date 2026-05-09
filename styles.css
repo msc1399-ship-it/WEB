@@ -2021,6 +2021,180 @@ p {
   text-align: center;
 }
 
+.final-cta-section {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(13, 163, 143, 0.22), transparent 30rem),
+    radial-gradient(circle at 12% 86%, rgba(201, 168, 76, 0.12), transparent 24rem),
+    linear-gradient(180deg, #102330 0%, #162734 52%, #0d1b25 100%);
+  color: var(--white);
+}
+
+.final-cta-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(25rem, 0.95fr);
+  gap: 4rem;
+  align-items: center;
+}
+
+.final-cta-copy h2 {
+  max-width: 47rem;
+  margin-top: 1rem;
+  color: var(--white);
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.08;
+}
+
+.final-cta-copy p {
+  max-width: 42rem;
+  margin-top: 1.35rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.06rem;
+  line-height: 1.75;
+}
+
+.final-cta-reinforcement {
+  display: block;
+  max-width: 42rem;
+  margin-top: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.final-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.final-cta-actions .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.final-cta-actions .btn-secondary:hover {
+  border-color: rgba(13, 163, 143, 0.55);
+  color: var(--accent);
+}
+
+.final-cta-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.35rem;
+}
+
+.final-cta-badges span {
+  padding: 0.45rem 0.72rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.final-cta-panel {
+  padding: 1.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.24);
+}
+
+.final-panel-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: start;
+}
+
+.final-panel-header h3 {
+  margin-top: 0.55rem;
+  color: var(--white);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
+}
+
+.final-panel-header > span {
+  padding: 0.42rem 0.65rem;
+  border: 1px solid rgba(13, 163, 143, 0.28);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.final-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.final-metrics article,
+.final-alert,
+.final-margin-chart {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.final-metrics article {
+  padding: 1rem;
+}
+
+.final-metrics span,
+.final-alert p {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.final-metrics strong {
+  display: block;
+  margin-top: 0.42rem;
+  color: var(--white);
+  font-size: 1.05rem;
+}
+
+.final-alert {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.75rem;
+  padding: 1rem;
+}
+
+.final-alert strong {
+  color: var(--white);
+  font-size: 0.95rem;
+}
+
+.final-alert p {
+  margin-top: 0.25rem;
+  line-height: 1.5;
+}
+
+.final-margin-chart {
+  margin-top: 0.75rem;
+  padding: 1rem;
+}
+
+.final-margin-chart .chart-bars {
+  background:
+    repeating-linear-gradient(to top, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 25%),
+    rgba(255, 255, 255, 0.04);
+}
+
 .site-footer {
   background: #0e1921;
   color: rgba(255, 255, 255, 0.62);
@@ -2668,6 +2842,7 @@ p {
 
   .pricing-hero-grid,
   .pricing-comparison,
+  .final-cta-grid,
   .risk-grid {
     grid-template-columns: 1fr;
   }
@@ -2782,6 +2957,15 @@ p {
 
   .pricing-hero {
     padding-top: 7rem;
+  }
+
+  .final-cta-section {
+    padding: 82px 0;
+  }
+
+  .final-panel-header,
+  .final-metrics {
+    grid-template-columns: 1fr;
   }
 
   .pricing-includes-grid {
