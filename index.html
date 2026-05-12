@@ -135,67 +135,85 @@
           </div>
         </div>
 
-        <aside class="hero-dashboard reveal delay-3" aria-label="Dashboard de análisis de compras">
+        <aside class="hero-dashboard analysis-dashboard reveal delay-3" aria-label="Dashboard de análisis financiero de farmacia">
           <div class="dashboard-header">
             <div>
-              <div class="card-label">Panel técnico de rentabilidad</div>
-              <h2 class="card-title">Control de margen real</h2>
+              <div class="card-label">Panel técnico de farmacia</div>
+              <h2 class="card-title">Control financiero de compras</h2>
             </div>
-            <span class="dashboard-status">Auditoría activa</span>
+            <span class="dashboard-status">Revisión 12:40 · Q2</span>
           </div>
 
-          <div class="margin-comparison">
-            <div class="margin-card theoretical">
-              <span>Margen teórico</span>
-              <strong>31,4%</strong>
-            </div>
-            <div class="margin-card corrected">
-              <span>Margen corregido</span>
-              <strong>29,8%</strong>
-            </div>
-          </div>
-
-          <div class="dashboard-chart" aria-label="Evolución de rentabilidad">
-            <div class="chart-head">
-              <span>Evolución de rentabilidad</span>
-              <strong>+1,6 pt controlados</strong>
-            </div>
-            <div class="chart-bars">
-              <span style="--bar: 44%"></span>
-              <span style="--bar: 52%"></span>
-              <span style="--bar: 49%"></span>
-              <span style="--bar: 64%"></span>
-              <span style="--bar: 58%"></span>
-              <span style="--bar: 76%"></span>
-            </div>
-          </div>
-
-          <div class="dashboard-alerts">
-            <article>
-              <span class="alert-dot"></span>
+          <div class="dashboard-main-card">
+            <div class="dashboard-card-head">
               <div>
-                <strong>Alertas de desviaciones</strong>
-                <p>8 condiciones fuera de rango</p>
+                <span class="dashboard-kicker">Margen corregido vs margen teórico</span>
+                <strong>29,8% <small>vs 31,4%</small></strong>
+              </div>
+              <span class="dashboard-pill">6 desviaciones</span>
+            </div>
+            <div class="margin-visual">
+              <div class="margin-track">
+                <span style="--value: 86%"></span>
+                <em>Teórico</em>
+              </div>
+              <div class="margin-track corrected">
+                <span style="--value: 72%"></span>
+                <em>Corregido</em>
+              </div>
+            </div>
+            <div class="mini-line-chart" aria-hidden="true">
+              <span style="--point: 34%"></span>
+              <span style="--point: 48%"></span>
+              <span style="--point: 41%"></span>
+              <span style="--point: 58%"></span>
+              <span style="--point: 54%"></span>
+              <span style="--point: 68%"></span>
+            </div>
+          </div>
+
+          <div class="dashboard-card-grid">
+            <article class="dashboard-mini-card">
+              <div class="dashboard-card-head compact">
+                <span class="dashboard-kicker">Costes ocultos detectados</span>
+                <strong>4 áreas</strong>
+              </div>
+              <div class="cost-list">
+                <span>Franquicias</span>
+                <span>Cargos logísticos</span>
+                <span>Rappels no imputados</span>
+                <span>Desviación proveedor</span>
               </div>
             </article>
-            <article>
-              <span class="alert-dot gold"></span>
-              <div>
-                <strong>Rappels no imputados</strong>
-                <p>3.420 EUR pendientes de conciliación</p>
+
+            <article class="dashboard-mini-card">
+              <div class="dashboard-card-head compact">
+                <span class="dashboard-kicker">Condiciones comerciales</span>
+                <strong>Seguimiento</strong>
+              </div>
+              <div class="condition-alerts">
+                <span><i class="alert-dot gold"></i> 3 cambios detectados</span>
+                <span><i class="alert-dot"></i> 2 alertas de revisión</span>
+                <span><i class="status-dot"></i> Control periódico activo</span>
               </div>
             </article>
           </div>
 
-          <div class="dashboard-grid">
-            <article>
-              <span>Costes ocultos detectados</span>
-              <strong>6.850 EUR</strong>
-            </article>
-            <article>
-              <span>Pérdidas evitables</span>
-              <strong>11.240 EUR</strong>
-            </article>
+          <div class="impact-card">
+            <div>
+              <span class="dashboard-kicker">Impacto económico estimado</span>
+              <strong>Pérdidas evitables y oportunidades</strong>
+            </div>
+            <div class="impact-bars" aria-hidden="true">
+              <span style="--bar: 54%"></span>
+              <span style="--bar: 72%"></span>
+              <span style="--bar: 48%"></span>
+              <span style="--bar: 80%"></span>
+            </div>
+            <div class="impact-meta">
+              <span>Última revisión: hoy</span>
+              <span>Etiqueta: margen corregido</span>
+            </div>
           </div>
         </aside>
       </div>
